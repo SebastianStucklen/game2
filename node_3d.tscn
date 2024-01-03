@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=3 uid="uid://bqxsnicdodxs4"]
+
+[ext_resource type="Script" path="res://Node3D.gd" id="1_hq7ig"]
+[ext_resource type="Texture2D" uid="uid://bwogu0h7sj16r" path="res://Screenshot 2023-12-06 133140.png" id="2_wmsel"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wpqxk"]
+albedo_texture = ExtResource("2_wmsel")
+uv1_scale = Vector3(2, 2, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_vf7rd"]
+material = SubResource("StandardMaterial3D_wpqxk")
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_hq7ig")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_vf7rd")
