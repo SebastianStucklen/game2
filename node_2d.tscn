@@ -1,8 +1,72 @@
-[gd_scene load_steps=2 format=3 uid="uid://dsor8efv3bfhu"]
+[gd_scene load_steps=10 format=3 uid="uid://dsor8efv3bfhu"]
 
 [ext_resource type="Script" path="res://Node2D.gd" id="1_sgttf"]
+[ext_resource type="Texture2D" uid="uid://cvllbbvx3mnjy" path="res://Resources/possum9.png" id="2_scg31"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5q5hv"]
+atlas = ExtResource("2_scg31")
+region = Rect2(0, 100, 250, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1elqs"]
+atlas = ExtResource("2_scg31")
+region = Rect2(250, 100, 250, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jtoek"]
+atlas = ExtResource("2_scg31")
+region = Rect2(500, 100, 250, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pee67"]
+atlas = ExtResource("2_scg31")
+region = Rect2(0, 0, 250, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ay6bn"]
+atlas = ExtResource("2_scg31")
+region = Rect2(250, 0, 250, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_daxpn"]
+atlas = ExtResource("2_scg31")
+region = Rect2(500, 0, 250, 100)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_x4e8r"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5q5hv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1elqs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jtoek")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1elqs")
+}],
+"loop": false,
+"name": &"walk left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pee67")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ay6bn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_daxpn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ay6bn")
+}],
+"loop": true,
+"name": &"walk right",
+"speed": 5.0
+}]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_sgttf")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_x4e8r")
+animation = &"walk right"
