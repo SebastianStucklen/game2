@@ -1,8 +1,18 @@
 HeartBeast
 https://www.youtube.com/@uheartbeast/playlists
+  Platformer
+  https://www.youtube.com/watch?v=wETY5_9kFtA&list=PL9FzW-m48fn2jlBu_0DRh7PvAt-GULEmd
 
 GDQuest
 https://www.youtube.com/@Gdquest/playlists
+  Getting started
+  https://www.youtube.com/watch?v=42HKCFf5Lf4&list=PLhqJJNjsQ7KEcm-iYJ2a8UCRN62bTneKa
+  Making your first 2d game
+  https://www.youtube.com/watch?v=Mc13Z2gboEk&list=PLhqJJNjsQ7KH_z21S_XeXD3Ht3WnSqW97
 
 Game Development Center
 https://www.youtube.com/@GameDevelopmentCenter/playlists
+  Player Movement
+  https://www.youtube.com/watch?v=SUZpVd18IMM&list=PLZ-54sd-DMAJBDA8Lm3mTyTPZ-eRPACpE
+  Sprite sheet
+  https://www.youtube.com/watch?v=Y744H67BfbQ&list=PLZ-54sd-DMAKYB8BVcYxlqWpn2zbw7NYL
